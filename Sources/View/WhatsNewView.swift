@@ -150,7 +150,8 @@ private extension WhatsNewView {
             feature
                 .image
                 .view()
-                .frame(width: self.layout.featureImageWidth)
+                .frame(width: self.layout.featureImageWidth, height: self.layout.featureImageHeight)
+                .clipped()
             VStack(
                 alignment: .leading,
                 spacing: self.layout.featureVerticalSpacing

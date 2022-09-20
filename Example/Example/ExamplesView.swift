@@ -93,9 +93,8 @@ private extension WhatsNew.Example {
                 title: "What's New in Calendar",
                 features: [
                     .init(
-                        image: .init(
-                            systemName: "envelope",
-                            foregroundColor: .red
+                        image: .init(name: "email_icon",
+                                     renderingMode: .original
                         ),
                         title: "Found Events",
                         subtitle: "Siri suggests events found in Mail, Messages, and Safari, so you can add them easily, such as flight reservations and hotel bookings."

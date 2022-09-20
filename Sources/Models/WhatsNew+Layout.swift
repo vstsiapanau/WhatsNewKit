@@ -30,6 +30,9 @@ public extension WhatsNew {
         /// The feature image width
         public var featureImageWidth: CGFloat
         
+        /// The feature image height
+        public var featureImageHeight: CGFloat
+        
         /// The feature horizontal spacing
         public var featureHorizontalSpacing: CGFloat
 
@@ -72,6 +75,7 @@ public extension WhatsNew {
             featureListSpacing: CGFloat = 25,
             featureListPadding: EdgeInsets = .init(top: 0, leading: 15, bottom: 0, trailing: 0),
             featureImageWidth: CGFloat = 40,
+            featureImageHeight: CGFloat = 40,
             featureHorizontalSpacing: CGFloat = 15,
             featureHorizontalAlignment: VerticalAlignment = .center,
             featureVerticalSpacing: CGFloat = 2,
@@ -86,6 +90,7 @@ public extension WhatsNew {
             self.featureListSpacing = featureListSpacing
             self.featureListPadding = featureListPadding
             self.featureImageWidth = featureImageWidth
+            self.featureImageHeight = featureImageHeight
             self.featureHorizontalSpacing = featureHorizontalSpacing
             self.featureHorizontalAlignment = featureHorizontalAlignment
             self.featureVerticalSpacing = featureVerticalSpacing

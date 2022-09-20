@@ -63,9 +63,11 @@ public extension WhatsNew.Feature.Image {
                 name,
                 bundle: bundle
             )
+            .resizable()
             .renderingMode(renderingMode)
             .font(.title)
             .imageScale(.large)
+            .aspectRatio(contentMode: .fill)
             .foregroundColor(foregroundColor)
         }
     }
