@@ -87,20 +87,17 @@ extension WhatsNewView: View {
             }
             #if os(iOS)
             .alwaysBounceVertical(false)
+            .background(
+                UIVisualEffectView
+                    .Representable()
+                    .padding(self.layout.footerVisualEffectViewPadding)
+            )
             #endif
             // Footer
             VStack {
                 Spacer()
                 self.footer
                     .modifier(FooterPadding())
-                    #if os(iOS)
-                    .background(
-                        UIVisualEffectView
-                            .Representable()
-                            .edgesIgnoringSafeArea(.horizontal)
-                            .padding(self.layout.footerVisualEffectViewPadding)
-                    )
-                    #endif
             }
             .edgesIgnoringSafeArea(.bottom)
         }
