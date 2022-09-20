@@ -90,6 +90,7 @@ extension WhatsNewView: View {
             .background(
                 UIVisualEffectView
                     .Representable()
+                    .edgesIgnoringSafeArea(.all)
                     .padding(self.layout.footerVisualEffectViewPadding)
             )
             #endif
